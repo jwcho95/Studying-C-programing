@@ -25,7 +25,7 @@
 
 // 2. 제어 문자를 사용한 출력
 
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main(void)
 {
@@ -33,5 +33,14 @@ int main(void)
 	printf("12345678901234567890\n");
 	printf("My\tfriend\n");	// 파이썬과 마찬가지로 문자열 내에 \t를 삽입하여서 띄어쓰기를 할 수 있다.
 	printf("Goot\bd\tchance\n"); // \b는 backspace를 한 후에 새로운 단어로 수정할 수 있게 도와준다.
-	printf("Cow!\rW\n"); // \r은 carriage return 즉, 맨 앞으로 이동하여 수정을 할 수 있게 한다. \b와 \r의 기능을 보아 컴퓨터는 기본적으로 삽입이 아닌 수정의 기능을 사용하는 것으로 보인다.
+	printf("Cow!\rW\a\n"); // \r은 carriage return 즉, 맨 앞으로 이동하여 수정을 할 수 있게 한다. \a는 벨소리를 내는 기능이다. \b와 \r의 기능을 보아 컴퓨터는 기본적으로 삽입이 아닌 수정의 기능을 사용하는 것으로 보인다.
+}*/
+
+// 3. 정수와 실수의 출력
+#include <stdio.h>
+
+int main(void)
+{
+	printf("%d\n", 10);
+	printf("%lf\n", 3.4);
 }
