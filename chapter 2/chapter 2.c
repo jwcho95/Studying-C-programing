@@ -1,7 +1,6 @@
 // <혼자 공부하는 C언어> 챕터 2-1
 
 // 1. main 함수의 활용
-
 /*작성자 : 조재완
   제목 : 10과 20을 더하는 프로그램*/
 
@@ -13,8 +12,8 @@
 }*/
 
 
-#include <stdio.h>
-/*int main(void)
+/* #include <stdio.h>
+int main(void)
 {
 	printf("Be happy!");
 	printf("My friend.");
@@ -24,7 +23,6 @@
 // 결과를 보면 이 두 문장은 서로 연속되어서 나온다. 그 이유는 개행 문자가 없기 때문이다. 파이썬과는 다르게 개행 문자를 집어 넣어주어야한다.
 
 // 2. 제어 문자를 사용한 출력
-
 /*#include <stdio.h>
 
 int main(void)
@@ -53,3 +51,21 @@ int main(void)
 } */
 
 // <혼자 공부하는 C언어> 챕터 2-2
+
+// 세 가지 진법의 정수 상수 (10진수, 8진수, 16진수)
+/* #include <stdio.h>
+
+int main(void)
+{
+	printf("%d\n", 12);
+	printf("%d\n", 014);
+	printf("%d\n", 0xc); // 10진수, 8진수, 16진수를 10진수로 표현한 것이다.
+
+	printf("\n");
+
+	printf("%o\n", 12);
+	printf("%x\n", 12);
+	printf("%X\n", 12); // 10진수를 각각 8진수, 16진수로 표현하도록 한 것이다. X를 대문자로 쓰면 16진수에서 대문자로 출력된다.
+	
+	return 0;
+} */
