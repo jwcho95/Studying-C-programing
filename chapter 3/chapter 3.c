@@ -54,3 +54,5 @@ int main(void)
 	printf("long형 변수 출력: %d\n", ln);
 	printf("long long형 변수 출력: %lld\n", lln); // lld로 출력하지 않으면 다른 값이 나온다.
 }
+//	char(1바이트) <= short(2바이트) <= int(4바이트) <= long(4바이트) <= long long(8바이트) 
+//		: 크기에 따라 자료형을 사용할 수 있다. 보통은 int, 정말 큰 값을 저장할 때는 long형을 사용한다.
