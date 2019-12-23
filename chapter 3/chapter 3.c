@@ -26,7 +26,7 @@ int main(void)
 } */
 
 // char형 변수의 사용
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main(void)
 {
@@ -37,4 +37,20 @@ int main(void)
 	printf("아스키 코드 값이 %d인 문자 : %c\n", ch2, ch2);
 
 	return 0;
+} */
+
+// 여러가지 정수형 변수
+#include <stdio.h>
+
+int main(void)
+{
+	short sh = 32767;
+	int in = 2147483647;
+	long ln = 2147483647;
+	long long lln = 123451234512345;
+
+	printf("short형 변수 출력: %d\n", sh);
+	printf("int형 변수 출력: %d\n", in);
+	printf("long형 변수 출력: %d\n", ln);
+	printf("long long형 변수 출력: %lld\n", lln); // lld로 출력하지 않으면 다른 값이 나온다.
 }
