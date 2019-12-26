@@ -40,7 +40,7 @@ int main(void)
 } */
 
 // 여러가지 정수형 변수
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main(void)
 {
@@ -53,6 +53,22 @@ int main(void)
 	printf("int형 변수 출력: %d\n", in);
 	printf("long형 변수 출력: %d\n", ln);
 	printf("long long형 변수 출력: %lld\n", lln); // lld로 출력하지 않으면 다른 값이 나온다.
-}
+} */
 //	char(1바이트) <= short(2바이트) <= int(4바이트) <= long(4바이트) <= long long(8바이트) 
 //		: 크기에 따라 자료형을 사용할 수 있다. 보통은 int, 정말 큰 값을 저장할 때는 long형을 사용한다.
+
+//unsigned 정수 자료형 : 음수가 없는 데이터를 저장할 때 사용한다.
+//unsigned를 잘못 사용한 경우
+#include <stdio.h>
+
+int main(void)
+{
+	unsigned int a;
+
+	a = 4294967295; // 두 정수가 메모리에 저장되는 형태는 같다.
+	printf("%d\n", a); // %d는 부호가 있는 정수를 10진수로 출력한다는 의미이다.
+	a = -1;
+	printf("%u\n", a); // %u는 부호 없이 10진수로 출력한다는 의미이다.
+
+	return 0;
+}
