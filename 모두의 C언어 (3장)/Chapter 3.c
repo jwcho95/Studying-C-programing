@@ -24,10 +24,6 @@ int main(void)
 {
 	int a = 1, b = 3, c = 5;
 
-	func10(a);
-	func10(b);
-	func10(c);
-
 	printf("a(1), b(3), c(5)의 10배는 각각 %d, %d, %d이다.", func10(a), func10(b), func10(c));
 }
 
