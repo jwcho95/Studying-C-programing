@@ -16,7 +16,7 @@ int main(void)
 } */
 // 함수를 적용하기 전 형태는 위와 같다.
 
-#include <stdio.h>
+/* #include <stdio.h>
 
 func10(int x);
 
@@ -30,4 +30,23 @@ int main(void)
 func10(int x)
 {
 	x = x * 10;
+} */
+
+
+// 함수의 값 반환
+#include <stdio.h>
+
+func10(int x);
+
+int main(void)
+{
+	int a = 1, b = 3, c = 5;
+
+	printf("a(1), b(3), c(5)의 10배는 각각 %d, %d, %d이다.", func10(a), func10(b), func10(c));
+}
+
+int func10(int x)
+{
+	x = x * 10;
+	return x;
 }
