@@ -34,7 +34,7 @@ func10(int x)
 
 
 // 함수의 값 반환
-#include <stdio.h>
+/* #include <stdio.h>
 
 func10(int x);
 
@@ -49,4 +49,31 @@ int func10(int x)
 {
 	x = x * 10;
 	return x;
+} */
+
+
+// 값을 입력 후 더하기 계산하기
+#define _CRT_SECURE_NO_WARNINGS // 이 문장이 없으면 비쥬얼 스튜디오에서는 보안상의 이유로 아래의 코드가 실행되지 않는다.
+#include <stdio.h>
+
+double abc(int x, int y);
+
+main()
+{
+	int x, y;
+	double z;
+
+	printf("정수 x의 값을 입력해주세요: ");
+	scanf("%d", &x);
+
+	printf("정수 y의 값을 입력해주세요: ");
+	scanf("%d", &y);
+
+	z = abc(x, y);
+	printf("z의 값은 %f\n", z);
+}
+
+double abc(int x, int y)
+{
+	return x + y + 3.14;
 }
