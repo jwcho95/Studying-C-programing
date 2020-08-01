@@ -142,6 +142,7 @@
     <ClCompile Include="structure_1.c" />
     <ClCompile Include="structure_2.c" />
     <ClCompile Include="structure_3.c" />
+    <ClCompile Include="structure_4.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
