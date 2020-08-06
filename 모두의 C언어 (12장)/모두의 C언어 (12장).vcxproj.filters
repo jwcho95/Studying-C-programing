@@ -21,5 +21,8 @@
     <ClCompile Include="structure_list_2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="structure_list_3.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -5,14 +5,15 @@
 main()
 {
 	int length, vertical, center;
+	int i, j;
 	printf("가로의 길이를 입력하시오: ");
 	scanf_s("%d", &length);
 	printf("세로의 길이를 입력하시오: ");
 	scanf_s("%d", &vertical);
 	center = (length - 1) / 2;
 
-	for (int i = 0; i < vertical; i++) {
-		for (int j = 0; j < length; j++) {
+	for (i = 0; i < vertical; i++) {
+		for (j = 0; j < length; j++) {
 			int sum = i + j;
 			if (sum == center + i) // (i,j) 행렬임을 이용하여 행과 열의 합이 피라미드의 중앙에 해당하는 값과 일치할 경우 별이 생성됨
 			{
@@ -38,8 +39,10 @@ main()
 
 main()
 {
-	for (int i = 0; i < 5; i++) {
-		for (int j = 0; j < 5; j++) {
+	int i, j;
+	
+	for (i = 0; i < 5; i++) {
+		for (j = 0; j < 5; j++) {
 			if (i <= j) {
 				printf("*");
 			}
